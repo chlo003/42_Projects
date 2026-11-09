@@ -3,7 +3,7 @@ import sys
 
 if __name__ == "__main__":
     print("=== Command Quest ===")
-    print("Program name: ft_command_quest.py")
+    print(f"Program name: {sys.argv[0]}")
     argv_number = len(sys.argv)
     if argv_number >= 2:
         print(f"Arguments received: {argv_number - 1}")
