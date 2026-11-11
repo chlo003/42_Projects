@@ -21,7 +21,7 @@ def consume_event(prev_list: list[tuple[str, str]]
 if __name__ == "__main__":
     print("=== Game Data Stream Processor ===")
 
-    for i in range(10):
+    for i in range(1000):
         n, a = next(gen_event())
         print(f"Event {i}: Player {n} did action {a}")
 

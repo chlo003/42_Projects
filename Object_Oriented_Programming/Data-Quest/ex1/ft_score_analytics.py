@@ -5,14 +5,13 @@ def store_score() -> None:
     argv_number = len(sys.argv)
     if argv_number >= 2:
         new = []
-        flag = True
         for element in sys.argv[1:]:
             try:
                 new.append(int(element))
             except ValueError:
-                flag = False
                 print(f"Invalid parameter: '{element}'")
-        if flag is False:
+                continue
+        if len(new) == 0:
             print("No scores provided. Usage: python3 "
                   "ft_score_analytics.py <score1> <score2> ...")
             return
