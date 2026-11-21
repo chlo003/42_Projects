@@ -5,9 +5,11 @@ from ex1 import HealingCreatureFactory, TransformCreatureFactory
 
 def battle(opponents: list[tuple[CreatureFactory, BattleStrategy]]) -> None:
     print("* Battle *")
-    for _ in range(len(opponents)):
-        ...
+    # stock: list[tuple[CreatureFactory, BattleStrategy]] = []
+    for i in range(len(opponents)):
 
+        for j in range(i + 1):
+            
 
 
 
